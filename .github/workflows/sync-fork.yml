@@ -25,5 +25,6 @@ jobs:
         git remote add upstream https://github.com/microsoft/vscode.git
         git fetch upstream
         git checkout main
+        git pull origin main
         git merge --allow-unrelated-histories --strategy-option ours upstream/main
         git push
